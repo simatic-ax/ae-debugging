@@ -1,0 +1,49 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "apax build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Download to PLC",
+            "type": "shell",
+            "command": "apax sld --targetIP 192.168.0.1 --input ./bin/plcsim --password superSecurePassword1337 --certificate ./ax-sdb-example.cer --restart --accept-security-disclaimer",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build & Download",
+            "type": "shell",
+            "command": "apax build; apax sld --targetIP 192.168.0.1 --input ./bin/plcsim --password superSecurePassword1337 --certificate ./ax-sdb-example.cer --restart --accept-security-disclaimer",
+            "problemMatcher": []
+        },
+        {
+            "label": "Monitor oneshot",
+            "type": "shell",
+            "command": "apax mon --targetIP 192.168.0.1 --password superSecurePassword1337 --certificate ./ax-sdb-example.cer --symbols 'myMotor'",
+            "problemMatcher": []
+        },
+        {
+            "label": "Monitor continuously",
+            "type": "shell",
+            "command": "apax mon --targetIP 192.168.0.1 --password superSecurePassword1337 --certificate ./ax-sdb-example.cer --file ./mon/variables.mon --continuously",
+            "problemMatcher": []
+        },
+        {
+            "label": "Modify globalInt to '0'",
+            "type": "shell",
+            "command": "apax mod --targetIP 192.168.0.1 --password superSecurePassword1337 --certificate ./ax-sdb-example.cer --symbol globalInt --value 0",
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Debugger",
+            "type": "shell",
+            "command": "apax sdb --targetIP 192.168.0.1 --password superSecurePassword1337 --certificate ./ax-sdb-example.cer",
+            "problemMatcher": []
+        }
+    ]
+}

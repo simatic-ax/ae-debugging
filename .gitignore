@@ -1,0 +1,7 @@
+.apax
+.env
+bin
+obj
+MonitorData.json
+apax-lock.json
+*.bak

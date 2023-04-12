@@ -1,0 +1,32 @@
+myBOOL
+myINT
+myDINT
+# this is a comment
+# myLINT
+mySINT
+myUINT
+myUDINT
+myULINT
+# myUSINT
+myREAL
+myLREAL
+myImaginarySymbol
+%IW0:sint
+%QW0
+%MW3:UInt
+%I0.1:boll
+%Q2.1:BOOL
+%M0.1:Bool
+%J3.4:Bool
+mySimpleArray
+myArray[1,2]
+myArray[0,*]
+myArray[1,2,3]
+myArray[1,100]
+myArray[*,*]
+myMotor
+myMotor.is_running
+myMotor.power_consumption
+myMotor.hours_operating
+myConveyor
+myConveyor.Motor1.is_running
