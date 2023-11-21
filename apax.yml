@@ -1,11 +1,11 @@
 name: "ax-download-example"
-version: 1.0.0
+version: 2.0.0
 type: app
 targets:
   - "1500"
   - plcsim
 devDependencies:
-  "@ax/sdk": 3.0.17
+  "@ax/sdk": ^5.0.0
 variables:
   APAX_BUILD_ARGS:
     - "--debug" 
