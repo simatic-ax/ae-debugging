@@ -1,7 +1,7 @@
-FUNCTION checkHundredth : BOOL
+FUNCTION CheckHundredth : BOOL
     VAR_INPUT
-        count: int;
+        count: INT;
     END_VAR
 
-    checkHundredth := (count MOD 100) = 0;
+    CheckHundredth := (count MOD 100) = 0;
 END_FUNCTION

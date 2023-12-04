@@ -1,11 +1,11 @@
 CONFIGURATION PLC_1
     VAR_GLOBAL
-        GlobalInt : int;
-        UpCounterInt : int;
+        GlobalInt : INT;
+        UpCounterInt : INT;
 
         // callpath example
-        counterInt    :      Int := 10000;
-        secondCounterInt:      Int := -10000;
+        CounterInt      :      INT :=  10000;
+        SecondCounterInt:      INT := -10000;
     END_VAR
 
     // func, fb, class examples

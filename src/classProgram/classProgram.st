@@ -1,6 +1,6 @@
 PROGRAM ClassProgram
     VAR_EXTERNAL
-        GlobalInt : int;
+        GlobalInt : INT;
     END_VAR
 
     VAR

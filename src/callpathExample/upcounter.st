@@ -1,11 +1,11 @@
-FUNCTION UpCounter_Func : Int
+FUNCTION UpCounter_Func : INT
     VAR_INPUT
-        up : Int;
+        up : INT;
     END_VAR
  
     VAR_TEMP
-        up_temp : Int;
-        down : Int;
+        up_temp : INT;
+        down : INT;
     END_VAR
  
     up_temp := up + 1;
@@ -13,6 +13,6 @@ FUNCTION UpCounter_Func : Int
     UpCounter_Func := up_temp;
 END_FUNCTION
 
-FUNCTION Unused_Func : Bool
+FUNCTION Unused_Func : BOOL
     ;
 END_FUNCTION

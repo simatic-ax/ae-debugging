@@ -1,6 +1,6 @@
 PROGRAM UpCounter
     VAR_EXTERNAL
-        counterInt:       Int;
+        CounterInt:       INT;
     END_VAR
  
     VAR_TEMP
@@ -8,11 +8,11 @@ PROGRAM UpCounter
         isHundredth: BOOL;
     END_VAR
 
-    counterInt := UpCounter_Func(counterInt);
+    CounterInt := UpCounter_Func(CounterInt);
 
-    isHundredth := checkHundredth(counterInt);
+    isHundredth := CheckHundredth(CounterInt);
     if isHundredth then 
-        counterInt := UpCounter_Func(counterInt);
+        CounterInt := UpCounter_Func(CounterInt);
     END_IF;
 
 END_PROGRAM
@@ -20,10 +20,10 @@ END_PROGRAM
 
 PROGRAM SomeCounter
     VAR_EXTERNAL
-        secondCounterInt : Int;
+        SecondCounterInt : Int;
     END_VAR
  
-    secondCounterInt := UpCounter_Func(secondCounterInt);
+    SecondCounterInt := UpCounter_Func(SecondCounterInt);
 END_PROGRAM
 
 
