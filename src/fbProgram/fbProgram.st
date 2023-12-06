@@ -1,10 +1,10 @@
 PROGRAM FbProgram
     VAR_EXTERNAL
-        UpCounterInt : int;
+        UpCounterInt : INT;
     END_VAR
 
     VAR
-        functionBlock : fb;
+        functionBlock : Fb;
     END_VAR
 
     UpCounterInt := UpCounterInt + 1;

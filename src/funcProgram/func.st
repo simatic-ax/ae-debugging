@@ -1,5 +1,5 @@
 NAMESPACE OuterNamespace
-    FUNCTION MyFunction : Int
+    FUNCTION MyFunction : INT
         VAR_INPUT
             in : INT;
         END_VAR
@@ -10,7 +10,7 @@ NAMESPACE OuterNamespace
             temp : INT;
         END_VAR
         VAR CONSTANT
-            const : Int := 732;
+            const : INT := 732;
         END_VAR
         
         temp := in + const;

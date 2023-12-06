@@ -1,15 +1,15 @@
-FUNCTION_BLOCK fb
+FUNCTION_BLOCK Fb
     VAR_EXTERNAL
-        UpCounterInt : int;
+        UpCounterInt : INT;
     END_VAR
     VAR
-        static : int;
+        static : INT;
     END_VAR
     VAR_TEMP
-        temp : int;
+        temp : INT;
     END_VAR
     VAR_OUTPUT
-        returnValue : int;
+        returnValue : INT;
     END_VAR
 
     static := UpCounterInt MOD 7;

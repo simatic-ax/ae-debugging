@@ -1,10 +1,10 @@
 PROGRAM FuncProgram
     VAR_EXTERNAL
-        GlobalInt : int;
+        GlobalInt : INT;
     END_VAR
 
     VAR
-        localInt : int;
+        localInt : INT;
     END_VAR
 
     GlobalInt := OuterNamespace.MyFunction(GlobalInt, localInt);

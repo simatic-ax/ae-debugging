@@ -1,11 +1,11 @@
-name: "ax-download-example"
-version: 1.0.0
+name: "ae-debugging"
+version: 2.0.0
 type: app
 targets:
   - "1500"
   - plcsim
 devDependencies:
-  "@ax/sdk": 3.0.17
+  "@ax/sdk": 5.1.1
 variables:
   APAX_BUILD_ARGS:
     - "--debug" 
