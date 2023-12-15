@@ -1,8 +1,7 @@
 on:
   push:
-    # Pattern matched against refs/tags
-    tags:
-      - "*"
+    branches:
+      - 'main'
 
 jobs:
   release-apax-lib:
