@@ -5,3 +5,4 @@ obj
 MonitorData.json
 apax-lock.json
 *.bak
+/.vs
