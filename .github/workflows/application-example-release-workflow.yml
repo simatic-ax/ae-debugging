@@ -59,7 +59,7 @@ jobs:
       - name: Pack the template
         uses: simatic-ax/actions/apax-pack@v4
         with:
-          key: secrets.APAX_SIGNKEY_V2
+          key: ${{ secrets.APAX_SIGNKEY_V2 }}
           key-version: "v2"
           path: ${{ env.TEMPLATE_PATH }}
 
